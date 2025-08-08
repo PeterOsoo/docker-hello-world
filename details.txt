@@ -1,1 +1,6 @@
 Run App - docker run -p 5000:5000 my-docker-app
+
+
+Run new app
+
+docker build -t myapp:1.0 . && docker stop myapp-container 2>/dev/null && docker rm myapp-container 2>/dev/null && docker run --name myapp-container -d -p 5000:5000 myapp:1.0
